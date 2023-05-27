@@ -54,7 +54,7 @@ body {
     background-position: center;
     will-change: transform;
     z-index: 2;
-    transition: var(--transition);
+   
 }    
 .layers__base {
     transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
@@ -62,9 +62,11 @@ body {
 }
 .layers__middle {
     transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+    transition: var(--transition);
 }
 .layers__front {
     transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+    transition: var(--transition);
 }
 .layer__header {
     z-index: 1;
